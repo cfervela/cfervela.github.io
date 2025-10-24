@@ -1,0 +1,58 @@
+ 
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Página de Inicio</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-left">
+  <a href="index.html" class="nav-logo">Austen Library</a>
+  <a href="index.html" class="nav-link">Home</a>
+  <a href="about.html" class="nav-link">About Us</a>
+    </div>
+    <div class="nav-right">
+      <span id="userName" class="user-name"></span>
+      <button id="loginBtn" class="icon-btn" title="Login">
+        <span class="login-icon">🔒</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Secciones principales -->
+  <main>
+    <section id="home">
+      <h1>Welcome to the Austen Library!</h1>
+      <p>2025 marks the 250th anniversary of Jane Austen's birth. This library was opened in her honor in her birthplace of Hampshire.</p>
+      <p>This library has a curated collection of all of her works as well as some of the books that have been inspired by them.</p>
+      <p>This collection also includes some of the movie and series adaptations that have sprung from her wonderful works.</p>
+      <p>If you already have an account please Log in.</p>
+    </section>
+    
+  </main>
+
+    <!-- Modal de Login -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h2>Iniciar Sesión</h2>
+      <form id="formLogin">
+        <input type="text" id="login" placeholder="Usuario" required>
+        <input type="password" id="password" placeholder="Contraseña" required>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p><strong>Fer Vela</strong> <br> 21 de Octubre 2025</p>
+  </footer>
+
+  <script src="app.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
